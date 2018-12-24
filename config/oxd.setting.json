@@ -1,1 +1,4 @@
-{ "oxd_id": "" }
+{
+    "oxd_id": "",
+    "redirect_uri": "https://tanpibut.lsr.nectec.or.th:8082"
+}
