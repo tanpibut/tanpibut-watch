@@ -1,0 +1,65 @@
+<html>
+
+<head></head>
+
+<body>
+    <dom-module id="tpb-setting"><template>
+            <iron-meta id="context" key="context"></iron-meta>
+        </template>
+        <script>
+            class TPBSetting extends Polymer.Element {
+                static get is() {
+                    return "tpb-setting"
+                }
+                static get properties() {
+                    return {
+                        config: {
+                            type: Object,
+                            notify: !0,
+                            value: function() {
+                                return {
+                                    app_name: "\u0E17\u0E31\u0E19\u0E1E\u0E34\u0E1A\u0E31\u0E15\u0E34 \u0E15\u0E34\u0E14\u0E15\u0E32\u0E21",
+                                    tanpibut_api: "https://api.tanpibut.org/v1",
+                                    inotify_uri: "https://inotify.tanpibut.org",
+                                    iaam_url: "https://iaam.tanpibut.org/iaamapp",
+                                    aes_secret: "vkiNfu:uigrid",
+                                    data_type: {
+                                        url: "https://api.tanpibut.org/v1/data_type",
+                                        type_id: "id",
+                                        type_name: "namt",
+                                        category: !0,
+                                        category_name: "namt",
+                                        id1h: "4",
+                                        lenght_date: [{
+                                            id: 3,
+                                            length: 3
+                                        }],
+                                        timegraph: [{
+                                            id: 2,
+                                            time: 7
+                                        }]
+                                    },
+                                    area: {
+                                        url: "/kendo/area",
+                                        id: "area_code",
+                                        name: "area_name",
+                                        hasChildren: "hasChildren"
+                                    },
+                                    datasource: {
+                                        url: "/data_source"
+                                    },
+                                    datatype: {
+                                        url: "/data_type"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            window.customElements.define(TPBSetting.is, TPBSetting);
+        </script>
+    </dom-module>
+</body>
+
+</html>

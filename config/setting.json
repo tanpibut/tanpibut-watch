@@ -1,0 +1,20 @@
+{
+    "app_name": "vs-project",
+    "tanpibut_api": "https://api.tanpibut.org/v1",
+    "inotify_uri": "https://inotify.tanpibut.org",
+    "iaam_url": "https://iaam.tanpibut.org/iaamapp",
+    "aes_secret": "vkiNfu:uigrid",
+    "data_type": {
+        "url": "https://api.tanpibut.org/v1/data_type",
+        "type_id": "id",
+        "type_name": "namt",
+        "category": true,
+        "category_name": "namt"
+    },
+    "area": {
+        "url": "https://api.tanpibut.org/v1/kendo/area?has_station=true",
+        "id": "area_code",
+        "name": "area_name",
+        "hasChildren": "hasChildren"
+    }
+}
